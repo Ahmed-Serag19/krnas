@@ -3,10 +3,10 @@ import Logo from "../assets/images/krnas-logo.jpg";
 
 const Navbar = () => {
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-white shadow-md min-h-[75px]">
       <div className="container mx-auto flex items-center justify-start gap-10 lg:gap-40 py-1 px-2 md:px-10">
         {/* Logo Section */}
-        <NavLink to="/" className="flex items-center">
+        <NavLink to="/homepage" className="flex items-center">
           <img
             src={Logo}
             alt="Krnas logo"
@@ -18,10 +18,10 @@ const Navbar = () => {
 
         {/* Navigation */}
         <nav aria-label="Main Navigation">
-          <ul className="flex space-x-26 text-gray-700">
+          <ul className="flex space-x-3 sm:space-x-10 lg:space-x-26 text-gray-700">
             <li>
               <NavLink
-                to="/"
+                to="/homepage"
                 className={({ isActive }) =>
                   `hover:text-primary/70 font-semibold text-black transition ${
                     isActive ? "text-primary" : ""

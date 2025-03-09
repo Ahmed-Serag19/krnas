@@ -6,7 +6,10 @@ const MainLayout = () => {
     <div className="flex flex-col min-h-screen">
       <Navbar />
 
-      <main className="flex-grow" aria-label="Main Content">
+      <main
+        className="flex-grow flex items-center justify-center"
+        aria-label="Main Content"
+      >
         <Outlet />
       </main>
     </div>
