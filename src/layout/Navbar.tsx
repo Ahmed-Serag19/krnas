@@ -45,18 +45,6 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink
-                to="/contact-us"
-                className={({ isActive }) =>
-                  `hover:text-primary/70 font-semibold text-black transition ${
-                    isActive ? "text-primary" : ""
-                  }`
-                }
-              >
-                تواصل معنا
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
                 to="/offers"
                 className={({ isActive }) =>
                   `hover:text-primary/70 font-semibold text-black transition ${
@@ -65,6 +53,18 @@ const Navbar = () => {
                 }
               >
                 العروض
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/contact-us"
+                className={({ isActive }) =>
+                  `hover:text-primary/70 font-semibold text-black transition ${
+                    isActive ? "text-primary" : ""
+                  }`
+                }
+              >
+                تواصل معنا
               </NavLink>
             </li>
           </ul>

@@ -3,12 +3,13 @@ import Navbar from "./Navbar";
 
 const MainLayout = () => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main>
+
+      <main className="flex-grow" aria-label="Main Content">
         <Outlet />
       </main>
-    </>
+    </div>
   );
 };
 
